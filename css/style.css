@@ -1,0 +1,1173 @@
+:root{
+
+    --primaryColor:#ffb237;
+    --secondaryNolor:#f7bcf7;
+    --lightColor:#ffffff;
+    --baColor-1:#171a1c;
+    --baColor-2:#22282a;
+    --padding:8%;
+
+    --color-instagram: #f85629;
+    --color-facebook:#3060e6;
+    --color-snapchat:#e6d91e;
+    --color-twitter:#356AF6;
+    --color-github:#059e21;
+    --color-youtube:#b81717;
+
+    --fontS-but:1.3rem;
+    --fontS-logo:2.2rem;
+    --borR-but:.7rem;
+
+    --line-height:1.5rem;
+
+}
+
+*{
+padding: 0px;
+margin: 0px;
+block-size: border-box;
+cursor:  default;
+}
+
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-style: 16px;
+    color: var(--lightColor);
+}
+
+
+h1{
+    font-size: 2.5rem;
+    text-transform:capitalize;
+    /* margin: 2rem 0; */
+
+    padding: 2rem 0;
+}
+
+h2{
+    font-size: 2.2rem;
+    letter-spacing: .05rem;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+h4{
+    font-size: 1.1rem;
+    letter-spacing: .12rem;
+    color: var(--secondaryNolor);
+
+}
+h5{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    line-height: var(--line-height);
+    color: var(--secondaryNolor);
+}
+span{
+    color: var(--primaryColor);
+}
+
+img{
+    /* width: 50%; */
+    width:  80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 1s ease-in-out;   
+}
+
+
+/* ___________________ section home start ___________________ */
+
+
+section.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--baColor-1);
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+
+section.home header{
+    padding-top: var(--fontS-logo);
+    padding-inline: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+section.home nav ul  {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:3rem ;
+    font-size: var(--fontS-but);
+}
+
+section.home nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--lightColor);
+    transition: all 300ms ease;
+}
+section.home nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.but{
+    color: var(--lightColor);
+    padding: .5rem 1rem;
+    border: none;
+    font-size: var(--fontS-but) ;
+    text-transform: capitalize;
+    border-radius: var(--borR-but);
+    background-color: var(--primaryColor);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+
+
+}
+.but:hover{
+    transform: translateY(-1px);
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    
+}
+
+.but:active{
+    transform: translateY(2px);
+}
+
+.main{
+    flex: 1;
+    /* background-color: #274c97; */
+    display: flex; 
+    padding-inline: var(--padding);
+}
+
+section.home main{
+    flex: 1;
+    /* height: 100%; */
+    /* background-color: #059e21; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.home article.art{
+    
+    padding: 1rem 0;
+   
+}
+
+
+
+
+/* ___________________ accounts start ___________________ */
+
+section.accounts1{
+    /* background-color: #290e0e; */
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+    overflow: hidden;
+    padding: 1rem;
+
+
+    
+}
+section.accounts1 div.icon{ 
+    color: #fefefe;
+    /* background-color: #2f0e0e;    */
+    height: 2rem;
+    width: 2rem;
+    /* box-shadow: 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: 2px solid #fefefe;
+    outline-offset: 3px;
+    transition: all 0.25s ease-out;
+
+    cursor: pointer;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ section.accounts1 div.icon i{ 
+    font-size: 1.5rem;
+    line-height: 3.5vh;
+    cursor: pointer;
+
+}
+section.accounts1 div.icon:hover i{
+    animation: shake 0.25s   ;
+
+}
+@keyframes shake {
+    10%,30%{
+        transform: rotate(15deg);
+    }
+    20%,40%{
+        transform: rotate(-15deg);
+    }
+}
+section.accounts1 div.instagram:hover{
+    background: linear-gradient(198deg,#7B36FF,#F74077,#E0512F,#F9DC1F);
+    outline: 2px solid #F74077;
+    outline-offset: 5px;
+}
+section.accounts1 div.facebook:hover{
+    background-color: var(--color-facebook);
+    outline: 2px solid var(--color-facebook);
+    outline-offset: 5px;
+}
+section.accounts1 div.snapchat:hover{
+    background-color: var(--color-snapchat);
+    outline: 2px solid var(--color-snapchat);
+    outline-offset: 5px;
+}
+section.accounts1 div.twitter:hover{
+    background-color: var(--color-twitter);
+    outline: 2px solid var(--color-twitter);
+    outline-offset: 5px;
+}
+section.accounts1 div.github:hover{
+    background-color: var(--color-github);
+    outline: 2px solid var(--color-github);
+    outline-offset: 5px;
+}
+section.accounts1 div.youtube:hover{
+    background-color: var(--color-youtube);
+    outline: 2px solid var(--color-youtube);
+    outline-offset: 5px;
+}
+
+/* ___________________ accounts end ___________________ */
+
+
+
+section.home aside{
+    flex: 1;
+    /* overflow: hidden; */
+    position: relative;
+  
+
+}
+
+
+
+section.home aside .bg{
+    /* display: inline-block; */
+    width: 25vw;
+    /* height: 60vh; */
+    /* background-color: var(--primaryColor); */
+    border-radius:49% 51% 71% 29% / 59% 23% 77% 41%    ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 1s ease-in-out;
+    background: url('../img/bk-ffb237.png');
+
+
+}
+
+section.home aside img.mane{
+    object-fit: contain;
+    width: 100%;
+    /* height: 90%; */
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    /* background-color: var(--primaryColor); */
+    border-radius:49% 51% 71% 29% / 59% 23% 77% 41%    ;
+    
+     /* border-radius: 50%; */
+
+    
+}
+
+section.home aside:hover .bg{
+    bottom: 4rem;
+}
+section.home aside:hover img.mane{
+    left: 45% ;
+}
+
+/* ___________________ section home end ___________________ */
+
+
+/* ___________________ section about start ___________________ */
+
+section.about{
+    height: 80vh;
+    padding-inline: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--baColor-2);
+
+}
+
+section.about article.img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+section.about article.img img.img-D{
+    width:  80%;
+    transform: translateX(-65%) ;
+}
+
+article.text-content{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+article.text-content p{
+    width: 80%;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    line-height: var(--line-height);
+    color: var(--secondaryNolor);
+}
+
+/* ___________________ section about end ___________________ */
+
+
+/* ___________________ section services start ___________________ */
+
+section.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-inline: var(--padding);
+    height: 70vh;
+    background-color: var(--baColor-1);
+    height: auto;
+    padding-bottom: 2rem;
+}
+.textCenter{
+    text-align: center;
+    padding-bottom: 0;
+}
+
+article.box{
+    /* background-color: #059e21; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.card{
+    background-color: var(--baColor-2);
+    /* width: 13vw ; */
+    /* height: 38vh; */
+    width: 250px;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+div.card i {
+    font-size: 3.5rem;
+    color: var(--primaryColor);
+    display: block;
+}
+
+
+/* ___________________ section services end ___________________ */
+
+/* ___________________ section skils start ___________________ */
+
+
+section.skills{
+    height: 80vh;
+    padding-inline: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--baColor-2);
+    /* position: relative; */
+
+}
+
+.contaner-skills{
+    flex: 1.2;
+    /* background-color: #059e21; */
+    padding-top: 1rem;
+}
+
+
+
+aside.box-skills{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* align-items: center; */
+    /* background-color: #9c2c2c; */
+    margin-top: 4rem;
+
+}
+
+div.skils{
+    width: 8rem;
+    height:  8rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  background-color: var(--lightColor);
+} 
+div.skils>img.ski{
+    width: 70%;
+
+}
+
+article.img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+section.about article.img img.img-D{
+    width:  80%;
+    /* top: 50%; */
+    transform: translateX(-65%) ;
+}
+
+/* ___________________ section skils end ___________________ */
+
+
+/* ___________________ footer start ___________________ */
+
+footer{
+    padding-inline: var(--padding);
+    height: 25vh;
+    background-color: var(--baColor-1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer>h4{
+    text-align: center;
+    width: 45vw;
+    line-height: var(--line-height);
+    text-transform: capitalize;
+}
+
+footer>p{
+    text-transform: capitalize;
+    color: var(--primaryColor);
+}
+
+/* ___________________ footer end ___________________ */
+
+/* ___________________ media queries tak ___________________ */
+
+
+.fa-solid{
+    position: relative;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    display: none;
+    
+    color:var(--lightColor);
+
+}
+
+
+
+/* ___________________ media queries ___________________ */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* ===== media queries phone hieght ===== */
+
+@media only screen and (max-width: 600px) {
+
+    /* :root{
+        
+    }
+    */
+    html{
+        font-style: 12px;
+    }
+
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+/* ___________________ media queries home ___________________ */
+    /* section.home{
+        height: 100vh;
+    } */
+
+    
+
+
+    section.home header{
+        height: 50px;
+        position: sticky;
+        top: 1;
+        right: 0;
+        left: 0;
+        padding-top: 0; 
+        text-align: center;
+        border-bottom: 3px solid var(--baColor-2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1rem;
+        z-index: 2;
+    }
+
+    
+    section.home header nav{
+        background-color: #059e21;
+        display: none;
+
+    }
+
+    section.home header nav.is-active{
+        display: block;
+    }
+    section.home header nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        /* gap: 10rem; */
+        /* display: block; */
+        background-color: var(--baColor-2);
+    }
+    section.home header nav ul li{
+        margin: 50px;
+    }
+    section.home header>.but{
+        display: none;
+    }
+
+    .fa-solid{
+        display: block;
+    }
+    .fa-rectangle-xmark{
+        color: var(--primaryColor);
+    }
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    section.home main{
+        flex: 2;
+        justify-content: start;
+        padding-top: 3rem;
+    }
+
+    section.home aside{
+        flex: 1.5;
+        /* z-index: 1; */
+    }
+
+    section.home aside div.bg{
+        width: 70%;
+        height: 70%;
+    }
+
+/* ___________________ media queries about ___________________ */
+
+    section.about{
+        
+        flex-direction: column;
+      
+
+    }   
+    section.about article.img{
+        align-items: start;
+    }
+   
+
+    section.about article.img img.img-D{
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+
+    article.text-content {
+        flex: 2;
+        margin-top: 5rem;
+    }
+
+
+
+    article.text-content p {
+        width: 100%;
+        line-height: 1.2rem;
+    }
+
+/* ___________________ media queries about ___________________ */
+
+    section.services{
+        height: auto;
+        padding-bottom: var(--padding);
+    }
+
+    section.services article.box{
+        justify-content: center;
+        gap: 1rem;
+    }
+   
+
+/* ___________________ media queries skills ___________________ */
+
+
+
+    section.skills{
+            height: auto;
+            padding: var(--padding);
+    }
+    section.skills article.contaner-skills{
+        padding: 0;
+        
+    }
+   
+
+    section.skills article.img{
+        display: none;
+        background-color: #059e21;
+    }
+
+
+    div.skils {
+        width: 5rem;
+        height: 5rem;
+    }
+
+/* ___________________ media queries footer ___________________ */
+
+    footer >h4{
+        width: auto;
+        font-size: 1rem;
+        /* background-color: #059e21; */
+
+    }
+    
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* ===== media queries phone hieght ===== */
+
+
+@media screen and (min-width:601px)and (max-width:767px){
+
+    /* :root{
+        
+    }
+    */
+    html{
+        font-size: 12px;
+    }
+
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+/* ___________________ media queries home ___________________ */
+    /* section.home{
+        height: 100vh;
+    } */
+
+
+
+
+    section.home header{
+        height: 50px;
+        position: sticky;
+        top: 1;
+        right: 0;
+        left: 0;
+        padding-top: 0; 
+        text-align: center;
+        border-bottom: 3px solid var(--baColor-2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1rem;
+        z-index: 2;
+    }
+
+    
+    section.home header nav{
+        background-color: #059e21;
+        display: none;
+
+    }
+
+    section.home header nav.is-active{
+        display: block;
+    }
+    section.home header nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        /* gap: 10rem; */
+        /* display: block; */
+        background-color: var(--baColor-2);
+    }
+    section.home header nav ul li{
+        margin: 2rem;
+    }
+    section.home header>.but{
+        display: none;
+    }
+
+    .fa-solid{
+        display: block;
+    }
+    .fa-rectangle-xmark{
+        color: var(--primaryColor);
+    }
+
+    /* .main{
+        flex-direction: row;
+    } */
+    .main {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.home main{
+        flex: 2;
+        justify-content: start;
+        padding-top: 3rem;
+    }
+
+    section.home aside{
+        flex: 1.5;
+        /* z-index: 1; */
+    }
+
+    section.home aside div.bg{
+        width: 70%;
+        height: 70%;
+    }
+
+/* ___________________ media queries about ___________________ */
+
+    /* section.about{ 
+        flex-direction: column;
+    }    */
+    section.about article.img{
+        align-items: center;
+    }
+   
+
+    section.about article.img img.img-D{
+        /* position: absolute;
+        left: 50%;
+        transform: translate(-50%); */
+        display: block;
+
+    }
+
+
+    article.text-content {
+        flex: 2;
+    }
+
+
+
+    article.text-content p {
+        width: 100%;
+        line-height: 1.2rem;
+    }
+
+/* ___________________ media queries about ___________________ */
+
+    section.services{
+        height: auto;
+        padding-bottom: var(--padding);
+    }
+
+    section.services article.box{
+        justify-content: center;
+        gap: 1rem;
+    }
+   
+
+/* ___________________ media queries skills ___________________ */
+
+
+
+    section.skills{
+            height: auto;
+            padding: var(--padding);
+    }
+    section.skills article.contaner-skills{
+        flex: 2;
+        padding: 0;
+        
+    }
+
+    section.skills article.contaner-skills>h1{
+        padding-top: 0;
+    }
+   
+
+    article.img{
+        display: block;
+
+        display: flex;
+        align-items: center;
+        position: relative;
+        /* background-color: #059e21; */
+    }
+
+
+    div.skils {
+        width: 5rem;
+        height: 5rem;
+    }
+
+   aside.box-skills{
+        margin-top: 0;
+    }
+
+/* ___________________ media queries footer ___________________ */
+
+    footer{
+        height: auto;
+    }
+
+    footer >h4{
+        width: auto;
+        font-size: 1rem;
+        /* background-color: #059e21; */
+
+    }
+    
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* ===== media queries tablets ===== */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+
+/* :root{
+    
+}
+*/
+html{
+    font-size: 14px;
+}
+
+
+/* h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+} */
+
+
+/* ___________________ media queries home ___________________ */
+/* section.home{
+    height: 100vh;
+} */
+
+
+
+section.home header{
+    height: 50px;
+    position: sticky;
+    top: 1;
+    right: 0;
+    left: 0;
+    padding-top: 0; 
+    text-align: center;
+    border-bottom: 3px solid var(--baColor-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    z-index: 2;
+}
+
+
+section.home header nav{
+    background-color: #059e21;
+    display: none;
+
+}
+
+section.home header nav.is-active{
+    display: block;
+}
+section.home header nav ul{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    /* gap: 10rem; */
+    /* display: block; */
+    background-color: var(--baColor-2);
+    padding-top: 3rem;
+}
+section.home header nav ul li{
+    margin: 2rem;
+}
+section.home header>.but{
+    display: none;
+}
+
+.fa-solid{
+    display: block;
+}
+.fa-rectangle-xmark{
+    color: var(--primaryColor);
+}
+
+    /* .main{
+    flex-direction: row;
+}
+
+section.home main{
+    flex: 2;
+    justify-content: start;
+    padding-top: 3rem;
+}
+*/
+section.home aside{
+    flex: 1;
+    /* z-index: 1; */
+    overflow: visible;
+}
+
+
+
+section.home aside>div.bg{
+    width: 250px;
+    height: 390px;
+
+    bottom: 50%;
+    left: 55%;
+    transform: translate(-50%,50%);
+} 
+
+section.home aside img.mane{
+    bottom: 50%;
+    transform: translate(-50%,45%);
+
+
+}
+
+/* ___________________ media queries about ___________________ */
+
+/* section.about{ 
+    flex-direction: column;
+}    */
+section.about article.img{
+    align-items: center;
+}
+
+
+section.about article.img img.img-D{
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%); */
+    display: block;
+
+}
+
+
+article.text-content {
+    flex: 1;
+}
+
+
+
+article.text-content p {
+    width: 100%;
+    line-height: 1.2rem;
+}
+
+/* ___________________ media queries about ___________________ */
+
+section.services{
+    height: auto;
+    padding-bottom: var(--padding);
+}
+
+section.services article.box{
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* ___________________ media queries skills ___________________ */
+
+
+
+section.skills{
+        height: auto;
+        padding: var(--padding);
+}
+
+section.skills article.contaner-skills{
+    flex: 2;
+    padding: 0;
+    
+}
+
+section.skills article.contaner-skills>h1{
+    padding-top: 0;
+}
+
+
+article.img{
+    display: block;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: #059e21; */
+}
+
+
+div.skils {
+    width: 5rem;
+    height: 5rem;
+}
+
+aside.box-skills{
+    margin-top: 0;
+}
+
+/* ___________________ media queries footer ___________________ */
+
+footer{
+    height: auto;
+}
+
+footer >h4{
+    width: auto;
+    font-size: 1rem;
+    /* background-color: #059e21; */
+
+}
+
+    
+    
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media screen and (min-width:992px) and (max-width:1380px) {
+html{
+    font-size: 13px;
+}
+
+
+
+/* ___________________ media queries about ___________________ */
+
+
+section.about {
+    height: 70vh;
+}
+
+/* ___________________ media queries services ___________________ */
+
+
+section.services {
+    height: 80vh;
+}
+
+/* ___________________ media queries skills ___________________ */
+
+
+section.skills {
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+/* ___________________ media queries footer ___________________ */
+
+footer{
+    height: 20vh;
+}
+
+footer >h4{
+    width: 50%;
+
+}
+
+    
+}
